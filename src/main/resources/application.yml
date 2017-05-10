@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sample?tinyInt1isBit=false&useSSL=false
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: mallnavi

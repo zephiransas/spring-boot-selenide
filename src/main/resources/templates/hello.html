@@ -1,0 +1,28 @@
+<html lang="jp" xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+
+    <p>Hello!</p>
+
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+
+        <tbody th:each="employee : ${employees}"
+               th:object="${employee}"
+               th:inline="text">
+        <tr>
+            <td>[[*{id}]]</td>
+            <td>[[*{name}]]</td>
+            <td>[[*{email}]]</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
