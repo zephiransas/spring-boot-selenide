@@ -1,8 +1,8 @@
 spring:
   profiles:
-    active: dev
+    active: test
   datasource:
-    url: jdbc:mysql://localhost:3306/sample?tinyInt1isBit=false&useSSL=false
+    url: jdbc:mysql://localhost:3306/sample_test?tinyInt1isBit=false&useSSL=false
     driverClassName: com.mysql.jdbc.Driver
     username: root
     password: mallnavi
