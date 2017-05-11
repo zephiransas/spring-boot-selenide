@@ -11,6 +11,8 @@ import org.springframework.boot.context.embedded.LocalServerPort;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import javax.transaction.Transactional;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -32,6 +34,7 @@ public class SampleTest {
     }
 
     @Test
+    @Transactional
     public void test() throws Exception {
         Employee e = Employee.builder()
                 .name("sample")
